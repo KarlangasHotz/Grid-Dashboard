@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Roboto:ital,wght@1,300&display=swap');
+
+html{
+    min-height: 100vh;
+    
+}
+body{
+    margin: 0px;
+}
+.container{
+    display: grid;
+    min-height: 100vh;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr;
+
+}
+/*ASIDE*/
+.aside{
+    display: grid;
+    justify-content: center;
+    min-width: 211px;
+    
+    background-color: #1892d3 ;
+    color: seashell;
+    font-weight: 900;
+    font-size: 20px ;
+    grid-template-rows: repeat(1, 2fr) repeat(15, 1fr) ;
+    font-family: 'Arima Madurai', cursive;
+}
+.aside > div{
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard{
+    grid-area: 1/1/1/2;
+}
+.home{
+    grid-area: 4/1/5/1;
+
+}
+.profile{
+    grid-area: 5/1/6/1;
+
+}
+.messages{
+    grid-area: 6/1/7/1;
+
+}
+.settings{
+    grid-area: 7/ 1/ 8/ 1;
+
+}
+
+
+.support{
+    grid-area: 10/ 1/ 11/ 1;
+
+}
+.privacy{
+    grid-area: 11/ 1/ 12/ 1;
+}
+.history{
+    grid-area: 12/ 1/ 13/ 1;
+}
+.tasks{
+    grid-area: 13/ 1/ 14/ 1;
+
+}
+.communities{
+    grid-area: 14/ 1/ 15/ 1;
+
+}
+
+
+/*Right side*/
+.right-side{
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 5fr;
+}
+/*Header*/
+.header{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(10, 1fr);
+    min-width: 747px;
+    border-style: inset;
+
+}
+.right-side .header > div{
+    grid-area: 2 / 2 / 2 / 3;
+    font-weight: bold;
+}
+.right-side .header img{
+    height: 8vh;
+    grid-area: 2 / 1 / 2 / 3;
+
+}
+
+.new, .upload, .share{
+    background-color: rgb(68, 166, 227);
+    border-radius: 50%;
+    color: seashell;
+    height: 4vh;
+    
+}
+.new{
+    grid-area: 2 / 4 / 2 / 5;
+}
+.upload{
+    grid-area: 2 / 6 / 2 / 7;
+
+}
+.share{
+    grid-area: 2 / 8 / 2 / 9;
+}
+/*Lower Right Side*/
+.lower-right-side{
+    display: grid;
+    gap: 10px ;
+    grid-template-columns: 4fr 1fr;
+
+}
+/*Projects*/
+.projects{
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    min-width: 254px; 
+    
+}
+.projects > div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(1, 20fr); 
+    min-width: 240px;
+}
+
+.left-column{
+    grid-area: 1/ 1 / 1 /1;
+    background-color: #1892d3;
+}
+
+.right-column{
+    display: grid;
+    grid-template: repeat(4, 1fr)/ repeat(4, 1fr);
+}
+.title-project{
+    grid-area: 1/ 2 / 1/ 4;
+}
+.project-img{
+    height: 3vh;
+    width: 3vw;
+    grid-area: 4/4/4/4;
+    max-width: 47px;
+}
+
+.ann-trend{
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+}
+/*Announcements*/
+.announcements{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    font-family: 'Roboto', sans-serif;
+    border-style: inset;
+
+}
+/*Trending*/
+.trending{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    font-family: 'Roboto', sans-serif;
+    border-style: inset;
+    
+}
