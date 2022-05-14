@@ -96,6 +96,7 @@ body{
 .right-side .header img{
     height: 8vh;
     grid-area: 2 / 1 / 2 / 3;
+    min-width: 74px;
 
 }
 
@@ -153,7 +154,7 @@ body{
     height: 3vh;
     width: 3vw;
     grid-area: 4/4/4/4;
-    max-width: 47px;
+    max-width: 21px;
 }
 
 .ann-trend{
@@ -167,6 +168,8 @@ body{
     grid-template-rows: repeat(4, 1fr);
     font-family: 'Roboto', sans-serif;
     border-style: inset;
+    justify-content: center;
+    align-items: center;
 
 }
 /*Trending*/
@@ -175,5 +178,8 @@ body{
     grid-template-rows: repeat(5, 1fr);
     font-family: 'Roboto', sans-serif;
     border-style: inset;
+    justify-content: center;
+    align-items: center;
+
     
 }
